@@ -1,0 +1,23 @@
+{
+  "payee": "PAYEE_TEST",
+  "mint": "MINT_KOG_TEST",
+  "quote": {
+    "minAmount": "1000",
+    "expiresAt": 1800000000000
+  },
+  "now": 1799999999000,
+  "tx": {
+    "signature": "SIG_SHORT_FEE_001",
+    "transfers": [
+      {
+        "mint": "MINT_KOG_TEST",
+        "to": "PAYEE_TEST",
+        "amount": "999"
+      }
+    ]
+  },
+  "expected": {
+    "ok": false,
+    "reason": "short fee"
+  }
+}
